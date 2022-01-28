@@ -37,7 +37,7 @@ defmodule MyVial do
   end
 
   def call(cauldron, options) do
-    update_data(fn data ->
+    update_data(cauldron, fn data ->
       data + 1
     end)
   end
