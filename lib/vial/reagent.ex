@@ -7,5 +7,5 @@ defmodule Vial.Reagent do
   @type event() :: any()
 
   @callback init(opts()) :: opts()
-  @callback handle(event(), opts()) :: any()
+  @callback handle_event(event(), opts()) :: any()
 end
