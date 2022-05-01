@@ -104,7 +104,7 @@ defmodule Vial do
   alias Vial.Cauldron
 
   @callback init(any()) :: any()
-  @callback call(Vial.Glass.t(), any()) :: Vial.Glass.t()
+  @callback call(Cauldron.t(), any()) :: Vial.Cauldron.t()
 
   def run(cauldron, vials, reagents, opts \\ [])
 
