@@ -22,5 +22,5 @@ tasks:
       sudo curl -L https://github.com/earthly/earthly/releases/latest/download/earthly-linux-amd64 -o /usr/local/bin/earthly
       sudo chmod a+x /usr/local/bin/earthly
   - build: |
-      cd liberator
+      cd vial
       sudo /usr/local/bin/earthly --ci +all
